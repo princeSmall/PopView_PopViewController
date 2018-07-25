@@ -13,6 +13,9 @@
 		1CD6E62A21080C3E00977015 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6E62921080C3E00977015 /* Assets.xcassets */; };
 		1CD6E62D21080C3E00977015 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6E62B21080C3E00977015 /* LaunchScreen.storyboard */; };
 		1CD6E63021080C3E00977015 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6E62F21080C3E00977015 /* main.m */; };
+		1CD6E63A21080C6B00977015 /* PopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6E63921080C6B00977015 /* PopView.m */; };
+		1CD6E63F21080C7800977015 /* PopViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6E63C21080C7800977015 /* PopViewCell.m */; };
+		1CD6E64021080C7800977015 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6E63D21080C7800977015 /* PopViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		1CD6E62C21080C3E00977015 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1CD6E62E21080C3E00977015 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1CD6E62F21080C3E00977015 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CD6E63821080C6B00977015 /* PopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopView.h; sourceTree = "<group>"; };
+		1CD6E63921080C6B00977015 /* PopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopView.m; sourceTree = "<group>"; };
+		1CD6E63B21080C7800977015 /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		1CD6E63C21080C7800977015 /* PopViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewCell.m; sourceTree = "<group>"; };
+		1CD6E63D21080C7800977015 /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		1CD6E63E21080C7800977015 /* PopViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewCell.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,8 @@
 		1CD6E61F21080C3D00977015 /* PopView_ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1CD6E63721080C5E00977015 /* ViewController */,
+				1CD6E63621080C5100977015 /* View */,
 				1CD6E62021080C3D00977015 /* AppDelegate.h */,
 				1CD6E62121080C3D00977015 /* AppDelegate.m */,
 				1CD6E62321080C3D00977015 /* ViewController.h */,
@@ -69,6 +80,26 @@
 				1CD6E62F21080C3E00977015 /* main.m */,
 			);
 			path = PopView_ViewController;
+			sourceTree = "<group>";
+		};
+		1CD6E63621080C5100977015 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6E63821080C6B00977015 /* PopView.h */,
+				1CD6E63921080C6B00977015 /* PopView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CD6E63721080C5E00977015 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CD6E63E21080C7800977015 /* PopViewCell.h */,
+				1CD6E63C21080C7800977015 /* PopViewCell.m */,
+				1CD6E63B21080C7800977015 /* PopViewController.h */,
+				1CD6E63D21080C7800977015 /* PopViewController.m */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,8 +172,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CD6E64021080C7800977015 /* PopViewController.m in Sources */,
 				1CD6E62521080C3D00977015 /* ViewController.m in Sources */,
 				1CD6E63021080C3E00977015 /* main.m in Sources */,
+				1CD6E63A21080C6B00977015 /* PopView.m in Sources */,
+				1CD6E63F21080C7800977015 /* PopViewCell.m in Sources */,
 				1CD6E62221080C3D00977015 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
