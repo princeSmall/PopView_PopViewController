@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C200BF72153989400B2467B /* PopFootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C200BF62153989400B2467B /* PopFootViewController.m */; };
+		1C200BFA215398BD00B2467B /* PopFootCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C200BF9215398BD00B2467B /* PopFootCell.m */; };
 		1CD6E62221080C3D00977015 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6E62121080C3D00977015 /* AppDelegate.m */; };
 		1CD6E62521080C3D00977015 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CD6E62421080C3D00977015 /* ViewController.m */; };
 		1CD6E62821080C3D00977015 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD6E62621080C3D00977015 /* Main.storyboard */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C200BF52153989400B2467B /* PopFootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopFootViewController.h; sourceTree = "<group>"; };
+		1C200BF62153989400B2467B /* PopFootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopFootViewController.m; sourceTree = "<group>"; };
+		1C200BF8215398BD00B2467B /* PopFootCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopFootCell.h; sourceTree = "<group>"; };
+		1C200BF9215398BD00B2467B /* PopFootCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopFootCell.m; sourceTree = "<group>"; };
 		1CD6E61D21080C3D00977015 /* PopView_ViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PopView_ViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CD6E62021080C3D00977015 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1CD6E62121080C3D00977015 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -48,6 +54,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C200BF4215397AD00B2467B /* FootViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1C200BF52153989400B2467B /* PopFootViewController.h */,
+				1C200BF62153989400B2467B /* PopFootViewController.m */,
+				1C200BF8215398BD00B2467B /* PopFootCell.h */,
+				1C200BF9215398BD00B2467B /* PopFootCell.m */,
+			);
+			path = FootViewController;
+			sourceTree = "<group>";
+		};
 		1CD6E61421080C3D00977015 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +84,7 @@
 		1CD6E61F21080C3D00977015 /* PopView_ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1C200BF4215397AD00B2467B /* FootViewController */,
 				1CD6E63721080C5E00977015 /* ViewController */,
 				1CD6E63621080C5100977015 /* View */,
 				1CD6E62021080C3D00977015 /* AppDelegate.h */,
@@ -177,7 +195,9 @@
 				1CD6E63021080C3E00977015 /* main.m in Sources */,
 				1CD6E63A21080C6B00977015 /* PopView.m in Sources */,
 				1CD6E63F21080C7800977015 /* PopViewCell.m in Sources */,
+				1C200BF72153989400B2467B /* PopFootViewController.m in Sources */,
 				1CD6E62221080C3D00977015 /* AppDelegate.m in Sources */,
+				1C200BFA215398BD00B2467B /* PopFootCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
