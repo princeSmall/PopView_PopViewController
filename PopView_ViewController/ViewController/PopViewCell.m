@@ -2,8 +2,8 @@
 //  PopViewCell.m
 //  ShowViewController
 //
-//  Created by le tong on 2018/7/24.
-//  Copyright © 2018年 le tong. All rights reserved.
+//  Created by iOS on 2018/7/24.
+//  Copyright © 2018年 iOS. All rights reserved.
 //
 
 #import "PopViewCell.h"

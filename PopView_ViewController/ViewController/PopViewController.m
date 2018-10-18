@@ -5,8 +5,8 @@
 //  PopViewController.m
 //  ShowViewController
 //
-//  Created by le tong on 2018/7/24.
-//  Copyright © 2018年 le tong. All rights reserved.
+//  Created by iOS on 2018/7/24.
+//  Copyright © 2018年 iOS. All rights reserved.
 //
 
 #import "PopViewController.h"
@@ -21,6 +21,13 @@
 
 @implementation PopViewController
 
+
+/**
+ 弹出viewcontroller
+
+ @param height 高度
+ @return 视图view
+ */
 + (instancetype)popViewControllerHeight:(CGFloat)height{
     PopViewController * popVC = [[PopViewController alloc]init];
     popVC.height = height;

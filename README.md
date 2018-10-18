@@ -1,34 +1,5 @@
-//
-//  PopView.m
-//  ShowViewController
-//
-//  Created by iOS on 2018/7/24.
-//  Copyright © 2018年 iOS. All rights reserved.
-//
-
-#import "PopView.h"
-@interface PopView()
-@property (nonatomic , strong)UIView *popShaperView;
-@property (nonatomic , strong)UIButton *okBtn;
-@end
-@implementation PopView
-
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
-- (instancetype)initWithFrame:(CGRect)frame{
-    if (self =[super initWithFrame:frame]) {
-        self.layer.cornerRadius = 10.0f;
-        self.backgroundColor = [UIColor whiteColor];
-        [self addSubview:self.okBtn];
-    }
-    return self;
-}
-
+###弹出view
+<pre>
 /**
  弹出视图
 
@@ -106,12 +77,51 @@
     }
     return _popShaperView;
 }
-- (UIButton *)okBtn{
-    if (!_okBtn) {
-        _okBtn = [[UIButton alloc]initWithFrame:CGRectMake(275 / 2.0 - 20, 0, 40, 40)];
-        _okBtn.backgroundColor = [UIColor blueColor];
-        [_okBtn addTarget:self action:@selector(touchOKBtn) forControlEvents:UIControlEventTouchUpInside];
-    }
-    return _okBtn;
+</pre>
+
+### 弹出viewcontroller
+<pre>
+/**
+ 弹出viewcontroller
+
+ @param height 高度
+ @return 视图view
+ */
++ (instancetype)popViewControllerHeight:(CGFloat)height{
+    PopViewController * popVC = [[PopViewController alloc]init];
+    popVC.height = height;
+    return popVC;
 }
-@end
+</pre>
+
+### 弹出底部viewcontroller
+<pre>
+/**
+ 弹出底部viewcontroller
+ */
+- (PopFootViewController *)footVC{
+    if (!_footVC) {
+        _footVC = [[PopFootViewController alloc]init];
+    }
+    return _footVC;
+}
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    [self hiddenFootViewController];
+}
+- (void)showFootViewController{
+     self.footVC.view.frame = CGRectMake(20, self.view.frame.size.height , self.view.frame.size.width - 40 , 160);
+     [self.view addSubview:self.footVC.view];
+    [UIView animateWithDuration:0.5f animations:^{
+        CGRect rect = self.footVC.view.frame;
+        rect.origin.y -= rect.size.height;
+        [self.footVC.view setFrame:rect];
+    }];
+}
+- (void)hiddenFootViewController{
+    [UIView animateWithDuration:0.5f animations:^{
+        CGRect rect = self.footVC.view.frame;
+        rect.origin.y += rect.size.height;
+        [self.footVC.view setFrame:rect];
+    }];
+}
+</pre>
